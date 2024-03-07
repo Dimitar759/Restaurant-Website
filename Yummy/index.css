@@ -6,7 +6,10 @@
     font-size: 30px;
 }
 
-
+.nav-item:hover .nav-link {
+    border-bottom: 3px solid red;
+    cursor: pointer;
+}
 
 .boja {
 
@@ -24,6 +27,11 @@
 #as {
     color: rgb(185, 183, 183);
 }
+
+.rounded-circle{
+    border: 3px solid red;
+}
+
 
 #lm {
     font-size: x-large;

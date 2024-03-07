@@ -21,26 +21,26 @@
             <a class="navbar-brand fs-3" href="#"><b>Yummy<span class="text-danger">.</span></b></a>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-grow-1 justify-content-center">
-                    <li class="nav-item">
-                        <a class="nav-link active border-bottom border-danger border-3" aria-current="page"
+                    <li class="nav-item cursor-pointer">
+                        <a class="nav-link" aria-current="page"
                             href="#">Home</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item cursor-pointer">
                         <a class="nav-link" id="aboutNav">About</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item cursor-pointer" id="menuBtn"> 
                         <a class="nav-link" >Menu</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link">Events</a>
+                    <li class="nav-item cursor-pointer">
+                        <a class="nav-link" >Events</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item cursor-pointer">
                         <a class="nav-link" >Chefs</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item cursor-pointer">
                         <a class="nav-link" >Gallery</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item cursor-pointer">
                         <a class="nav-link" >Contact</a>
                     </li>
                 </ul>
@@ -48,7 +48,6 @@
                     <button type="button" class="btn btn-danger rounded-pill" id = "bookATableNav">Book A Table</button>
                 </form>
             </div>
-
         </div>
     </nav>
 
@@ -71,7 +70,7 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6 order-1 order-md-2 order-1 order-md-2 text-center text-lg-start">
-                    <img src="/images/hero-img.png" id="img1">
+                    <img src="images/hero-img.png" id="img1">
                 </div>
             </div>
         </div>
@@ -79,7 +78,7 @@
 
 
     <section>
-        <div class=" col-md-12 text-center mt-5 " id="as">
+        <div class="col-md-12 text-center mt-5 text-danger" id="as">
             About us
         </div>
         <div class=" col-md-12 text-center mt-3" id="lm">
@@ -91,38 +90,20 @@
             <div class="row">
                 <div class="bg-image col-sm-12 col-md-7 d-flex">
                     <div class="d-flex align-items-end justify-content-center py-3 my-3">
-                        <div class="p2 position-absolute">
+                        <div class="p2 position-absolute rounded-circle">
                             <h4>Book a Table</h4>
                             <p><b>+1 5589 55488 55</b></p>
                         </div>
                     </div>
                 </div >
-                <div class="col-md-5 col-sm-12 text-start " id= "aboutUsPage" >
-                    <i>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, corporis nobis. Delectus
-                        hic
-                        suscipit ipsa maiores expedita quaerat voluptas.</i><br />
-                    <i class="bi bi-check2-all ms-3 text-danger"></i><span class="ms-2">Lorem ipsum dolor, sit amet
-                        consectetur
-                        adipisicing
-                        elit.</span><br />
-                    <i class="bi bi-check2-all ms-3 text-danger"></i><span class="ms-2">Lorem ipsum dolor sit amet
-                        consectetur,
-                        adipisicing elit.
-                        Ea?</span><br />
-                    <i class="bi bi-check2-all ms-3 text-danger"></i><span class="ms-2">Lorem, ipsum dolor sit amet
-                        consectetur
-                        adipisicing elit. Eum
-                        quisquam consequuntur ratione et quae omnis. Labore aut delectus animi assumenda aliquam sit
-                        vero
-                        fugit neque.</span>
-                    <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et expedita nihil
-                        quaerat
-                        inventore
-                        distinctio. Impedit, modi commodi voluptate vitae odit repellat cum numquam optio blanditiis
-                        qui
-                        dolore velit voluptatem deleniti porro cupiditate corrupti quos officiis nulla delectus?
-                        Totam,
-                        sunt tempore!</p>
+                <div class="col-md-5 col-sm-12 text-start" id="aboutUsPage">
+                    <p><i>At Yummy, we're dedicated to providing you with a culinary experience like no other. With a focus on quality ingredients and impeccable service, we aim to exceed your expectations with every visit.</i></p>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-check2-all ms-3 text-danger"></i><span class="ms-2">Our menu features a variety of dishes crafted with care and attention to detail. From classic favorites to innovative creations, there's something for everyone to enjoy.</span></li>
+                        <li><i class="bi bi-check2-all ms-3 text-danger"></i><span class="ms-2">We take pride in sourcing the freshest ingredients from local farmers and suppliers. By supporting our community, we ensure that each dish is made with quality ingredients you can trust.</span></li>
+                        <li><i class="bi bi-check2-all ms-3 text-danger"></i><span class="ms-2">Our team of experienced chefs is committed to delivering exceptional flavors and culinary excellence. With a passion for food and creativity, they strive to delight your palate with every bite.</span></li>
+                    </ul>
+                    <p class="mt-3">Join us at Yummy and experience the perfect blend of exquisite flavors, warm hospitality, and unforgettable moments. We look forward to serving you and making your dining experience truly exceptional.</p>
                     <img src="images/about-2.jpg" id="img3" />
                 </div>
             </div>
@@ -131,7 +112,7 @@
     </section>
     <section>
         <div class="container-fluid p-5 bf-light ">
-            <div class="row bg-light py-5">
+            <div class="row bg-light py-5 justify-content-center">
                 <div class="col-lg-4 pb-4 pb-lg-0">
                     <div class="card bg-danger">
                         <div class="card-body">
@@ -139,22 +120,20 @@
                                     class="fs-1 text-start text-white">
                                     Yummy</h1>
                             </h5>
-                            <p class="card-text text-white text-start mt-3">Lorem ipsum dolor sit amet consectetur
-                                adipisicing
-                                elit.
-                                Inventore cupiditate tempore libero itaque laudantium facilis ducimus odit ut culpa
-                                mollitia,
-                                adipisci soluta iste nam tempora doloribus ratione consequuntur! Porro saepe a magni,
-                                veritatis
-                                dolores distinctio at voluptates odit sint expedita?</p>
-                            <div class="d-flex justify-content-center"><a href="#"
-                                    class="btn btn-primary btn-close-white opacity-50">Learn
-                                    More</a></div>
+                            <p class="card-text text-white text-start mt-3">At Yummy, we're dedicated to providing an exceptional dining experience. Here's why customers choose us:
+
+                                Quality Ingredients: We use only the freshest ingredients for delicious dishes.
+                                Culinary Excellence: Our chefs create innovative and flavorful meals.
+                                Warm Hospitality: Enjoy friendly service in a welcoming atmosphere.
+                                Ambiance: Our restaurant offers the perfect setting for any occasion.
+                                Community Commitment: We support local suppliers and give back to our community.
+                                Join us at Yummy and experience the difference!</p>
+                            <div class="d-flex justify-content-center"><a class="btn btn-light cursor-pointer" id="learnMore">Learn More</a></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-8 ">
-                    <div class="row abv align-items-center">
+                <div class="col-lg-8">
+                    <div class="row abv align-items-center ">
                         <div class="col-lg-4 pb-4 pb-lg-0">
                             <div class="card">
 
@@ -208,25 +187,7 @@
                 </div>
             </div>
     </section>
-    <div class="row slika2 bg-danger text-white d-flex flex-column align-content-center text-center mt-5 b">
-        <div class="col-lg-3 pb-3 pb-lg-0">
-            <h1>232</h1>
-            <h3>Clients</h3>
-        </div>
-        <div class="col-lg-3 pb-3 pb-lg-0">
-            <h1>521</h1>
-            <h3>Projects</h3>
-        </div>
-        <div class="col-lg-3 pb-3 pb-lg-0">
-            <h1>1453</h1>
-            <h3>Hours Of Support</h3>
-        </div>
-        <div class="col-lg-3 pb-3 pb-lg-0">
-            <h1>32</h1>
-            <h3>Workers</h3>
-        </div>
-    </div>
-    </div>
+</div>
     <div class="containter-fluid mx-3 m-auto" id="menu">
         <div class="row">
             <div class="col-12 text-center mt-5">
