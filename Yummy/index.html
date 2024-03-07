@@ -1,6 +1,6 @@
 <html lang="en">
 
-<head>
+<head id="btn1"> 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -60,7 +60,8 @@
                         <h2>Enjoy your healthy</h2>
                         <h2>Delicious food</h2>
                         </br>
-                        <p style="width: 90%"> Experience Flavorful Excellence at Yummy!
+                        <p style="width: 90%"> 
+                            Indulge in a culinary journey of healthy and delectable cuisine at Yummy, where each dish is crafted with meticulous care and Flavorful Excellence.
                         </p>
                         <br>
                         <div>
@@ -506,9 +507,8 @@
                     <div class="card-body">
                         <h5 class="card-title text-center">Ethan Johnson</h5>
                         <p class="muted text-center">Master Chef</p>
-                        <p class="card-text text-center"><i>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Delectus ipsa odio alias commodi est voluptatem unde. Magnam quia sunt nobis excepturi
-                                inventore nihil similique atque?</i></p>
+                        <p class="card-text text-center"><i>
+                            Ethan Johnson, known as the "Master Chef," is a highly skilled culinary professional renowned for his exceptional talent in the kitchen. With a keen eye for detail and a passion for creating delicious dishes, Ethan's culinary creations never fail to impress. Whether he's crafting gourmet meals or experimenting with new flavors, Ethan's dedication to his craft shines through in every dish he prepares.</i></p>
                     </div>
                 </div>
             </div>
@@ -518,10 +518,8 @@
                     <div class="card-body">
                         <h5 class="card-title text-center">Sophia Thompson</h5>
                         <p class="muted text-center">Patissier</p>
-                        <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                            Repellendus culpa
-                            architecto nihil omnis fugit. Possimus recusandae ex nostrum laborum quaerat impedit earum
-                            sint, maxime reiciendis.</p>
+                        <i class="card-text text-center">
+                            Sophia Thompson, a talented Patissier, is celebrated for her exquisite creations in the world of pastry. With a delicate touch and a flair for creativity, Sophia crafts delectable desserts that captivate both the eyes and the taste buds. Her passion for pastry is evident in every confection she creates, showcasing her dedication to perfection and her commitment to delivering sweet delights that leave a lasting impression.</i>
 
                     </div>
                 </div>
@@ -532,9 +530,7 @@
                     <div class="card-body">
                         <h5 class="card-title text-center">Liam Martinez</h5>
                         <p class="muted text-center">Cook</p>
-                        <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-                            quas eaque, distinctio eveniet veritatis in ipsa ullam unde pariatur aspernatur. Soluta
-                            maxime perspiciatis rerum deleniti!</p>
+                        <i class="card-text text-center">Liam Martinez, a skilled Cook, brings a wealth of culinary expertise to the table. With a blend of creativity and precision, Liam crafts delicious dishes that showcase his passion for cooking. From traditional favorites to innovative creations, Liam's culinary creations never fail to impress. With a keen eye for detail and a commitment to quality, Liam consistently delivers memorable dining experiences that leave guests craving more.</i>
 
                     </div>
                 </div>
@@ -553,39 +549,42 @@
                     <div class="col-lg-8 bg-light d-flex flex-column justify-content-center" id="reservationsTable">
                         <div class="row">
                             <div class="col-lg-4 py-4 py-lg-0">
-                                <input type="text" class="form-control" placeholder="Your Name" aria-label="Your name">
+                                <input type="text" id="yourFirstName" class="form-control" placeholder="Your First Name" aria-label="Your name" required>
+                            </div>
+                            <div class="col-lg-4 py-4 py-lg-0">
+                                <input type="text" id="yourLastName" class="form-control" placeholder="Your Last Name" aria-label="Your Last Name" required>
                             </div>
                             <div class="col-lg-4 pb-4 pb-lg-0 ">
-                                <input type="text" class="form-control" placeholder="Your Email"
-                                    aria-label="Your email">
+                                <input type="email" id="yourEmail" class="form-control" placeholder="Your Email"
+                                    aria-label="Your email" required>
                             </div>
-                            <div class="col-lg-4 ">
-                                <input type="text" class="form-control" placeholder="Your Phone"
-                                    aria-label="Your phone">
-                            </div>
+                            
                         </div>
                         <div class="row mt-4">
-                            <div class="col-lg-4 pb-4 pb-lg-0">
-                                <input type="text" class="form-control" placeholder="Date" aria-label="Date">
+                            <div class="col-lg-4 ">
+                                <input type="number"  id="yourNumber" class="form-control" placeholder="Your Phone"
+                                    aria-label="Your phone" required>
                             </div>
                             <div class="col-lg-4 pb-4 pb-lg-0">
-                                <input type="text" class="form-control" placeholder="Time" aria-label="Time">
+                                <input type="datetime-local" id="dateTime" class="form-control" placeholder="Time" aria-label="Time" required>
                             </div>
                             <div class="col-lg-4 ">
-                                <input type="text" class="form-control" placeholder="# of people"
-                                    aria-label="# of people">
+                                <input type="number" id="nOfPeople" class="form-control" placeholder="Number of people"
+                                    aria-label="# of people" required>
                             </div>
                         </div>
                         <div class="row mt-4">
                             <div class="col-lg-12">
-                                <textarea class="form-control" rows="5" placeholder="Message"></textarea>
+                                <textarea class="form-control" id="yourMessage" rows="5" placeholder="Message"></textarea>
                             </div>
                         </div>
                         <div class="row mt-4 pb-5 pb-lg-0">
-                            <div class="col-lg-12"><button type="button" class="btn btn-danger rounded-pill px-5">Book
+                            <div class="col-lg-12"><button type="button" class="btn btn-danger rounded-pill px-5" id="bookATableButton">Book
                                     A
                                     Table</button>
                             </div>
+                            <BR></BR>
+                            <p class="text-center fw-bold fs-5 notShow" id = "reservingTableMessage">Your table has been booked!</p>
                         </div>
                     </div>
                 </div>
@@ -603,7 +602,7 @@
                         <div class="col-lg-1 mt-lg-3"><i class="bi bi-map fs-1 text-danger"></i></div>
                         <div class="col-lg-11">
                             <h3>Our Address</h3>
-                            <p>A108 Adam Street, New York, NY 535022</p>
+                            <p>456 Broadway, Brooklyn, NY 11211</p>
                         </div>
                     </div>
                 </div>
@@ -615,7 +614,7 @@
                         </div>
                         <div class="col-lg-11">
                             <h3>Email Us</h3>
-                            <p>contact@example.com</p>
+                            <p>adamenfroy32@gmail.com</p>
                         </div>
                     </div>
                 </div>
@@ -707,7 +706,8 @@
             integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
             crossorigin="anonymous"></script>
 
-        <script src="script.js"></script>
+        <script src="navbar.js"></script>
+        <script src="bookATable.js"></script>
 </body>
 
 </html>

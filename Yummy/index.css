@@ -93,6 +93,10 @@
     max-width: 100%;
 }
 
+.notShow{
+    display: none;
+}
+
 .btn-circle.btn-xl {
     width: 70px;
     height: 70px;
